@@ -1,0 +1,8 @@
+{
+  "name": "portfolio-frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "89dd7808"
+}
