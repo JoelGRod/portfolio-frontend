@@ -7,7 +7,9 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "docker-build": "docker build -t portfolio-frontend .",
+    "docker-run": "docker run -dp 80:80 --name portfolio-frontend portfolio-frontend"
   },
   "dependencies": {
     "@capacitor/app": "1.0.6",
