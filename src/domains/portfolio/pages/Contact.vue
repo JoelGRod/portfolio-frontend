@@ -1,25 +1,16 @@
 <template>
   <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Contact</ion-title>
-      </ion-toolbar>
-    </ion-header>
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Tab 2</ion-title>
-        </ion-toolbar>
-      </ion-header>
+      <ion-title size="large">Contact</ion-title>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { IonPage, IonTitle, IonContent } from '@ionic/vue';
 
 export default  {
-  name: 'Tab3',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  name: 'Portfolio-Contact',
+  components: { IonTitle, IonContent, IonPage }
 }
 </script>
