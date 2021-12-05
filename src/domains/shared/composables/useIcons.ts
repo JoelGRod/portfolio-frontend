@@ -1,26 +1,16 @@
 import {
-  heartOutline,
-  heart,
-  ellipse,
-  square,
-  triangle,
-  listOutline,
-  exitOutline,
   homeOutline,
-  planetOutline,
+  codeWorkingOutline,
+  personOutline,
+  mailOutline
 } from "ionicons/icons";
 
 const useIcons = () => {
   return {
-    heartOutline,
-    heart,
-    ellipse,
-    square,
-    triangle,
-    listOutline,
-    exitOutline,
     homeOutline,
-    planetOutline,
+    codeWorkingOutline,
+    personOutline,
+    mailOutline
   };
 };
 

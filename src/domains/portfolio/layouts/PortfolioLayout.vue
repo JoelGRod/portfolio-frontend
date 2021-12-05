@@ -6,7 +6,7 @@
     <master-layout
       title="JGR Portfolio"
       layoutId="home-content"
-      :isMenuActive="true"
+      :isMenuActive="false"
     >
       <TabsComponent :tabItems="tabItems"></TabsComponent>
     </master-layout>
@@ -15,10 +15,8 @@
 
 <script lang="ts">
 import { defineComponent, defineAsyncComponent } from "vue";
-
 // Ionic components
 import { IonPage } from "@ionic/vue";
-
 // Composables
 import useTabs from "../composables/useTabs";
 import useMenu from "../composables/useMenu";
@@ -32,13 +30,13 @@ export default defineComponent({
     ),
     MenuComponent: defineAsyncComponent(
       () => import("../../shared/components/MenuComponent.vue")
-    ),
+    )
   },
 
   setup() {
     const { tabItems } = useTabs();
     const { menuItems } = useMenu();
-
+    
     return {
       tabItems,
       menuItems

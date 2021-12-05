@@ -5,23 +5,13 @@ import useIcons from "@/domains/shared/composables/useIcons";
 
 const useMenu = () => {
 
-    const { homeOutline, planetOutline, square } = useIcons();
+    const { homeOutline } = useIcons();
 
     const menuItems: MenuItem[] = [
         {
-          title: "Home",
+          title: "Portfolio",
           icon: homeOutline,
-          link: "HomePage"
-        },
-        {
-          title: "Lists",
-          icon: planetOutline,
-          link: "Lists-1"
-        },
-        {
-          title: "Utility",
-          icon: square,
-          link: "GridPage"
+          link: "Portfolio-Home"
         },
     ];
 

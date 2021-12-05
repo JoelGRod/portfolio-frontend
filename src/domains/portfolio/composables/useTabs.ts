@@ -4,26 +4,37 @@ import { TabItem } from "@/domains/shared/interfaces/menu.interfaces";
 import useIcons from "@/domains/shared/composables/useIcons";
 
 const useTabs = () => {
-  const { listOutline, exitOutline } = useIcons();
+  const { 
+    homeOutline, 
+    codeWorkingOutline, 
+    personOutline, 
+    mailOutline 
+  } = useIcons();
 
   const tabItems: TabItem[] = [
     {
-      tabName: "tab1",
-      link: "Lists-1",
-      icon: listOutline,
-      tabLabel: "Lists I",
+      tabName: "home-tab",
+      link: "Portfolio-Home",
+      icon: homeOutline,
+      tabLabel: "Home",
     },
     {
-      tabName: "tab2",
-      link: "Lists-2",
-      icon: listOutline,
-      tabLabel: "Lists II",
+      tabName: "works-tab",
+      link: "Portfolio-Demos",
+      icon: codeWorkingOutline,
+      tabLabel: "Works",
     },
     {
-      tabName: "tab3",
-      link: "HomePage",
-      icon: exitOutline,
-      tabLabel: "Exit",
+      tabName: "about-tab",
+      link: "Portfolio-About",
+      icon: personOutline,
+      tabLabel: "About",
+    },
+    {
+      tabName: "contact-tab",
+      link: "Portfolio-Contact",
+      icon: mailOutline,
+      tabLabel: "Contact",
     },
   ];
 
