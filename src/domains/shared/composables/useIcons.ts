@@ -4,7 +4,8 @@ import {
   personOutline,
   mailOutline,
   logoAngular,
-  logoVue
+  logoVue,
+  logoWordpress
 } from "ionicons/icons";
 
 const useIcons = () => {
@@ -14,7 +15,8 @@ const useIcons = () => {
     personOutline,
     mailOutline,
     logoAngular,
-    logoVue
+    logoVue,
+    logoWordpress
   };
 };
 

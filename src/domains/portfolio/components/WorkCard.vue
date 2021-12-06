@@ -1,19 +1,50 @@
 <template>
   <ion-card>
     <img :src="cardInfo.img" />
-    <ion-card-header style="margin: 0px; padding: 0px 0px 10px 0px">
+    <ion-card-header class="card-header">
       <ion-item>
-        <ion-card-title slot="start">{{ cardInfo.title }}</ion-card-title>
-        <ion-icon :icon="cardInfo.icon" slot="end"></ion-icon>
+        <ion-card-title slot="start" color="primary">
+            {{ cardInfo.title }}
+        </ion-card-title>
+        <ion-icon
+          :icon="cardInfo.icon"
+          class="card-header-icon"
+          color="secondary"
+          size="large"
+          slot="end">
+        </ion-icon>
       </ion-item>
+      <ion-card-subtitle 
+        class="card-header-subtitle" 
+        color="secondary">
+          {{ cardInfo.subtitle }}
+      </ion-card-subtitle>
     </ion-card-header>
-    <ion-card-content>
+
+    <ion-card-content class="card-content">
       {{ cardInfo.content }}
     </ion-card-content>
-    <ion-item>
-      <ion-icon :icon="cardInfo.icon" slot="start"></ion-icon>
-      <ion-label>ion-item in a card, icon left, button right</ion-label>
-      <ion-button fill="outline" slot="end">View</ion-button>
+
+    <ion-item class="card-buttons">
+      <ion-buttons slot="end">
+        <ion-button
+          v-if="cardInfo.codeLink"
+          class="card-button-margin"
+          fill="outline"
+          color="primary"
+          target="_blank"
+          :href="cardInfo.codeLink">
+          Code
+        </ion-button>
+        <ion-button
+          v-if="cardInfo.viewLink"
+          fill="outline"
+          color="secondary"
+          target="_blank"
+          :href="cardInfo.viewLink">
+          View
+        </ion-button>
+      </ion-buttons>
     </ion-item>
   </ion-card>
 </template>
@@ -21,16 +52,16 @@
 <script lang="ts">
 import {
   IonCard,
-  IonCardContent,
   IonCardHeader,
   IonCardTitle,
+  IonCardSubtitle,
+  IonCardContent,
   IonIcon,
   IonItem,
-  IonLabel,
   IonButton,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
-import { WorkCard } from "../interfaces/cards-interfaces";
+import { WorkCardInfo } from "../interfaces/cards-interfaces";
 
 export default defineComponent({
   name: "WorkCard",
@@ -39,20 +70,39 @@ export default defineComponent({
     IonCardContent,
     IonCardHeader,
     IonCardTitle,
+    IonCardSubtitle,
     IonIcon,
     IonItem,
-    IonLabel,
     IonButton,
   },
   props: {
     cardInfo: {
-      type: Object as () => WorkCard,
+      type: Object as () => WorkCardInfo,
       required: true,
     },
   },
-
-  //   setup() {},
 });
 </script>
 
-<style></style>
+<style>
+.card-button-margin {
+  padding-right: 0.3rem;
+}
+.card-buttons {
+  margin-bottom: 0.5rem;
+}
+.card-header {
+  margin: 0rem;
+  padding: 0rem 0rem 1rem 0rem;
+}
+.card-header-icon {
+  margin: 0.5rem 0rem 0rem 0rem
+}
+.card-header-subtitle {
+  margin: -0.2rem 0rem 0.4rem 0rem; padding-left: 1rem
+}
+.card-content {
+  white-space: pre-line;
+  color: #f3f3f3;
+}
+</style>

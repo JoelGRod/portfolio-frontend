@@ -1,8 +1,9 @@
-export interface WorkCard {
+export interface WorkCardInfo {
     title: string;
+    subtitle: string;
     content: string;
     img: string;
     icon: string;
-    code_link?: string;
-    demo_link?: string;
+    codeLink?: string;
+    viewLink?: string;
 }
