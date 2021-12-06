@@ -2,7 +2,9 @@ import {
   homeOutline,
   codeWorkingOutline,
   personOutline,
-  mailOutline
+  mailOutline,
+  logoAngular,
+  logoVue
 } from "ionicons/icons";
 
 const useIcons = () => {
@@ -10,7 +12,9 @@ const useIcons = () => {
     homeOutline,
     codeWorkingOutline,
     personOutline,
-    mailOutline
+    mailOutline,
+    logoAngular,
+    logoVue
   };
 };
 

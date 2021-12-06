@@ -1,5 +1,10 @@
 <template>
   <ion-page>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>Works</ion-title>
+      </ion-toolbar>
+    </ion-header>
     <ion-content :fullscreen="true">
       <ion-title size="large">Home</ion-title>
     </ion-content>
@@ -7,10 +12,26 @@
 </template>
 
 <script lang="ts">
-import { IonPage, IonTitle, IonContent } from '@ionic/vue';
+import {
+  IonPage,
+  // Header
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  // Content
+  IonContent,
+} from "@ionic/vue";
 
-export default  {
-  name: 'Portfolio-Home',
-  components: { IonTitle, IonContent, IonPage }
-}
+export default {
+  name: "Portfolio-Home",
+  components: {
+    IonPage,
+    // Header
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    // Content
+    IonContent,
+  },
+};
 </script>
