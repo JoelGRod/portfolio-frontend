@@ -58,6 +58,7 @@ import {
   IonCardContent,
   IonIcon,
   IonItem,
+  IonButtons,
   IonButton,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
@@ -73,6 +74,7 @@ export default defineComponent({
     IonCardSubtitle,
     IonIcon,
     IonItem,
+    IonButtons,
     IonButton,
   },
   props: {
@@ -84,7 +86,7 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style scoped>
 .card-button-margin {
   padding-right: 0.3rem;
 }

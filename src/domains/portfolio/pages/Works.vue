@@ -3,6 +3,14 @@
     <ion-content :fullscreen="true">
       <ion-grid>
         <ion-row class="ion-justify-content-center">
+          <ion-col size="11" class="ion-text-center">
+            <h2 class="title">Projects</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt adipisci in sint.</p>
+            <p>Dolorum voluptates, quod laboriosam ab quia a itaque asperiores quis sed pariatur, accusamus facere suscipit praesentium nam neque.</p>
+            
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
           <ion-col
             size="12"
             size-sm="6"
@@ -19,14 +27,25 @@
 </template>
 
 <script lang="ts">
-import { IonPage, IonContent, IonGrid, IonRow, IonCol } from "@ionic/vue";
-import { defineComponent, defineAsyncComponent, computed } from "vue";
-import useIcons from "../../shared/composables/useIcons";
+import { 
+  IonPage,
+  // Content
+  IonContent, 
+  IonGrid, 
+  IonRow, 
+  IonCol 
+} from "@ionic/vue";
+import { 
+  defineComponent, 
+  defineAsyncComponent,
+} from "vue";
+import useData from "../composables/useData";
 
 export default defineComponent({
   name: "Portfolio-Works",
   components: {
     IonPage,
+    // Content
     IonContent,
     IonGrid,
     IonRow,
@@ -35,37 +54,18 @@ export default defineComponent({
   },
 
   setup() {
-    const { logoAngular, logoVue, logoWordpress } = useIcons();
-    const works = computed(() => {
-      return [
-        {
-          title: "Chat App",
-          subtitle: "Angular",
-          content: 
-          `A basic chat app created with Angular and NodeJs.
-          You only need to register to be able to create your own profiles (chat users) to chat.
-          As a security measure, each room can only be entered with a single profile.
-          The backend is solved with NodeJs and Express, MongoDb is used as database.`,
-          img: "assets/test-photo.jpg",
-          icon: logoAngular,
-          codeLink: "https://github.com/JoelGRod/Backend-Server-TS-Sockets",
-          viewLink: "https://jgrdev-portfolio.herokuapp.com/auth/login",
-        },
-        {
-          title: "Wordpress Page",
-          subtitle: "Wordpress",
-          content: 
-          `A page made for the socio-cultural space El Sitio del Sauzal.
-          For its realization, the CMS Wordpress has been used together with the avada template.
-          Some elements were developed to satisfy the client needs (styles and custom main menu, all solved with CSS).`,
-          img: "assets/test-photo.jpg",
-          icon: logoWordpress,
-          viewLink: "https://elsitiodelsauzal.com/",
-        },
-      ];
-    });
+    const { getWorks: works } = useData();
 
-    return { logoAngular, logoVue, logoWordpress, works };
+    return { works };
   },
 });
 </script>
+
+<style scoped>
+
+.title {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+</style>
