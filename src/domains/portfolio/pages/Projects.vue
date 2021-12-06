@@ -7,7 +7,6 @@
             <h2 class="title">Projects</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt adipisci in sint.</p>
             <p>Dolorum voluptates, quod laboriosam ab quia a itaque asperiores quis sed pariatur, accusamus facere suscipit praesentium nam neque.</p>
-            
           </ion-col>
         </ion-row>
         <ion-row class="ion-justify-content-center">

@@ -19,10 +19,10 @@ const useTabs = () => {
       tabLabel: "Home",
     },
     {
-      tabName: "works-tab",
+      tabName: "projects-tab",
       link: "Portfolio-Demos",
       icon: codeWorkingOutline,
-      tabLabel: "Works",
+      tabLabel: "projects",
     },
     {
       tabName: "about-tab",

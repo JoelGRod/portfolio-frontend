@@ -9,7 +9,7 @@ const portfolioRoutes: Array<RouteRecordRaw> = [
   {
     path: "works",
     name: "Portfolio-Demos",
-    component: () => import("@/domains/portfolio/pages/Works.vue"),
+    component: () => import("@/domains/portfolio/pages/Projects.vue"),
   },
   {
     path: "about",
