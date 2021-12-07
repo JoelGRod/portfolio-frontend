@@ -1,0 +1,223 @@
+{
+  "jgr": {
+    "name": "Joel González Rodríguez",
+    "profile": "Full-Stack Developer",
+    "desc": "Javascript Web Developer and IT Systems Technician.\n Computer enthusiast with the desire to continue training and learning.\n I really like working in a team and face new challenges.\n My profile is eminently technical, give me a problem and I will do everything in my hands to find a solution.",
+    "location": "Santa Cruz de Tenerife, Spain",
+    "email": "joelgrdev@gmail.com",
+    "rrss": {
+      "linkedin": "https://www.linkedin.com/in/joel-gonz%C3%A1lez-rodr%C3%ADguez-087b6652/",
+      "github": "https://github.com/JoelGRod",
+      "twitter": "https://twitter.com/GRJoe8",
+      "instagram": "https://www.instagram.com/joel_g_rod/?hl=es"
+    },
+    "lang": [
+      {
+        "lang": "Spanish",
+        "level": "native"
+      },
+      {
+        "lang": "English",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "profile": "IT Systems Technician",
+        "company": "EGATESA",
+        "location": "La Esperanza, Tenerife",
+        "from": "2015",
+        "to": "2019",
+        "desc": "Computer maintenance.\n Preparation, configuration and assembly of individual equipment.\n Bizerba programming.\n Servers and computers backups.\n Development of lightweight Apps with Access, VBA and Angular.\n CSB-System.\n User Support.\n RGPD."
+      },
+      {
+        "profile": "IT Systems Technician",
+        "company": "GC 7 Islas",
+        "location": "La Esperanza, Tenerife",
+        "from": "2012",
+        "to": "2013",
+        "desc": "Administrative tasks in the maintenance area.\n IT User Support."
+      },
+      {
+        "profile": "Architecture Technician",
+        "company": "Gesplan SA",
+        "location": "Santa Cruz de Tenerife",
+        "from": "2011",
+        "to": "2012",
+        "desc": "Systematization of urban information in the Canary Islands."
+      },
+      {
+        "profile": "Architecture Technician",
+        "company": "Obras Canarias SL",
+        "location": "Santa Cruz de Tenerife",
+        "from": "2008",
+        "to": "2010",
+        "desc": "Project manager in architectural works for the public administration."
+      }
+    ],
+    "education": [
+      {
+        "title": "Full-Stack Development Course",
+        "academy": "Focan Institute",
+        "location": "Santa Cruz de Tenerife",
+        "from": "2019",
+        "to": "2020",
+        "desc": "HTML, CSS, JS, Java, PHP, SQL...\n App. Development With Web Technology.\nLevel 3 Professional Certificate."
+      },
+      {
+        "title": "Google IT Automation with Python",
+        "academy": "Coursera",
+        "location": "Online",
+        "from": "2020",
+        "to": "2020",
+        "desc": "This six-course certificate, developed by Google, is designed to provide IT in-demand skills (Python, Git, and IT automation).\n How to write code in Python, with a special focus on how this applies to automating tasks in the world of IT support and systems administration."
+      },
+      {
+        "title": "Programmer Analyst, Web Development Course",
+        "academy": "AFS Training Academy",
+        "location": "Santa Cruz de Tenerife",
+        "from": "2013",
+        "to": "2014",
+        "desc": "HTML, CSS, JS, PHP, SQL...\n App. Development.\nLevel 3 Professional Certificate."
+      },
+      {
+        "title": "Building Engineering Degree",
+        "academy": "Camilo José Cela University",
+        "location": "Madrid",
+        "from": "2009",
+        "to": "2011",
+        "desc": "Building Engineering Degree."
+      },
+      {
+        "title": "Architecture Technician Degree",
+        "academy": "La Laguna University",
+        "location": "Santa Cruz de Tenerife",
+        "from": "2004",
+        "to": "2009",
+        "desc": "Architecture Technician Degree."
+      }
+    ],
+    "projects": [
+        {
+            "title": "El Sitio del Sauzal",
+            "subtitle": "Wordpress",
+            "desc": "A page made for the socio-cultural space El Sitio del Sauzal.\n\nFor its realization, the CMS Wordpress has been used together with the avada template.\n\n Some elements were developed to satisfy the client needs (styles and custom main menu, all solved with CSS).",
+            "img": "assets/test-photo.jpg",
+            "icon": "logoWordpress",
+            "codeLink": "",
+            "viewLink": "https://elsitiodelsauzal.com/"
+        },
+        {
+            "title": "Personal Portfolio",
+            "subtitle": "Vue3, Ionic",
+            "desc": "My peronal Portfolio, yes, the one you are visiting right now.\n\nMade only with Vue.js and Ionic framework using a JSON file as a repository in absence of connecting it to the backend.",
+            "img": "assets/test-photo.jpg",
+            "icon": "logoVue",
+            "codeLink": "https://github.com/JoelGRod/portfolio-frontend",
+            "viewLink": ""
+        },
+        {
+            "title": "Chat App",
+            "subtitle": "Angular, Node, MongoDb",
+            "desc": "A basic chat app created with Angular and NodeJs.\n\nYou only need to register to be able to create your own profiles (chat users) to chat.\n\nAs a security measure, each room can only be entered with a single profile.\n\nThe backend is solved with NodeJs and Express, MongoDb is used as database.",
+            "img": "assets/test-photo.jpg",
+            "icon": "logoAngular",
+            "codeLink": "https://github.com/JoelGRod/Backend-Server-TS-Sockets",
+            "viewLink": "https://jgrdev-portfolio.herokuapp.com/auth/login"
+        },
+        {
+            "title": "Focan Final Project",
+            "subtitle": "Angular, Node, MongoDb",
+            "desc": "A basic administrative app created with Angular, NodeJs and MongoDb as a final project for the web development course.\n\nYou can register hospitals and doctors, associate them with each other and make modifications.\n\nIt also allows you to log in a traditional way or through google and its token system with oauth2 using GCP.\n\nIt also allows you access to your own profile to modify it and change the general theme of the app.\n\nThe Project is based on the udemy courses (Angular Advanced) from the great teacher Fernando Herrera.",
+            "img": "assets/test-photo.jpg",
+            "icon": "logoAngular",
+            "codeLink": "https://github.com/JoelGRod/Focan-Final-Project",
+            "viewLink": "https://focan-final-project.herokuapp.com/login"
+        },
+        {
+            "title": "Countries App",
+            "subtitle": "Angular",
+            "desc": "A basic app created with Angular to show information of the countries that are searched.\n\nYou can search by country, capital or region and have an autocomplete option.\n\nUse the API 'REST Countries', very useful to obtain information of this kind.\n\nThis app is deployed on Netlify.\n\nThe Project is based on the udemy courses (Angular Basic 2021) from the great teacher Fernando Herrera.",
+            "img": "assets/test-photo.jpg",
+            "icon": "logoAngular",
+            "codeLink": "https://github.com/JoelGRod/Countries-App",
+            "viewLink": "https://countries-app-af2708.netlify.app/"
+        },
+        {
+            "title": "Gifs App",
+            "subtitle": "Angular",
+            "desc": "A basic app created with Angular for search gifs of any kind.\n\nIt has a history of searched gifs and a 'gifs to show' limit.\n\nUse the API 'Giphy' as gifs search engine.\n\nThis app is deployed on Netlify.\n\nThe Project is based on the udemy courses (Angular Basic 2021) from the great teacher Fernando Herrera.",
+            "img": "assets/test-photo.jpg",
+            "icon": "logoAngular",
+            "codeLink": "https://github.com/JoelGRod/Gifs-App",
+            "viewLink": "https://gifs-app-de371a.netlify.app/"
+        }
+    ],
+    "knowledge": [
+      {
+        "name": "HTML",
+        "icon": "logoHtml5"
+      },
+      {
+        "name": "CSS",
+        "icon": "logoCss3"
+      },
+      {
+        "name": "SCSS/Sass",
+        "icon": "logoSass"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "logoJavascript"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "logoJavascript"
+      },
+      {
+        "name": "Python",
+        "icon": "logoPython"
+      },
+      {
+        "name": "Vue.js",
+        "icon": "logoVue"
+      },
+      {
+        "name": "Angular2+",
+        "icon": "logoAngular"
+      },
+      {
+        "name": "Ionic",
+        "icon": "logoIonic"
+      },
+      {
+        "name": "Node.js",
+        "icon": "logoNodejs"
+      },
+      {
+        "name": "SQL",
+        "icon": "cubeOutline"
+      },
+      {
+        "name": "MongoDb",
+        "icon": "cubeOutline"
+      },
+      {
+        "name": "Wordpress",
+        "icon": "logoWordpress"
+      },
+      {
+        "name": "Docker",
+        "icon": "logoDocker"
+      },
+      {
+        "name": "Gimp",
+        "icon": "pencilOutline"
+      },
+      {
+        "name": "Autocad",
+        "icon": "pencilOutline"
+      }
+    ]
+  }
+}

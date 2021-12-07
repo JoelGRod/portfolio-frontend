@@ -22,7 +22,7 @@
     </ion-card-header>
 
     <ion-card-content class="card-content">
-      {{ cardInfo.content }}
+      {{ cardInfo.desc }}
     </ion-card-content>
 
     <ion-item class="card-buttons">
@@ -106,5 +106,6 @@ export default defineComponent({
 .card-content {
   white-space: pre-line;
   color: #f3f3f3;
+  line-height: 1.5rem;
 }
 </style>

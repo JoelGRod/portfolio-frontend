@@ -3,9 +3,20 @@ import {
   codeWorkingOutline,
   personOutline,
   mailOutline,
+  // Logos
   logoAngular,
   logoVue,
-  logoWordpress
+  logoWordpress,
+  logoHtml5,
+  logoCss3,
+  logoSass,
+  logoJavascript,
+  logoPython,
+  logoIonic,
+  logoNodejs,
+  cubeOutline,
+  logoDocker,
+  pencilOutline,
 } from "ionicons/icons";
 
 const useIcons = () => {
@@ -14,9 +25,20 @@ const useIcons = () => {
     codeWorkingOutline,
     personOutline,
     mailOutline,
+    // Logos
     logoAngular,
     logoVue,
-    logoWordpress
+    logoWordpress,
+    logoHtml5,
+    logoCss3,
+    logoSass,
+    logoJavascript,
+    logoPython,
+    logoIonic,
+    logoNodejs,
+    cubeOutline,
+    logoDocker,
+    pencilOutline,
   };
 };
 

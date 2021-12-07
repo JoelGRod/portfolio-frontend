@@ -1,7 +1,7 @@
 export interface WorkCardInfo {
     title: string;
     subtitle: string;
-    content: string;
+    desc: string;
     img: string;
     icon: string;
     codeLink?: string;
