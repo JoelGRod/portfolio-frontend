@@ -5,12 +5,28 @@
     "desc": "Javascript Web Developer and IT Systems Technician.\n Computer enthusiast with the desire to continue training and learning.\n I really like working in a team and face new challenges.\n My profile is eminently technical, give me a problem and I will do everything in my hands to find a solution.",
     "location": "Santa Cruz de Tenerife, Spain",
     "email": "joelgrdev@gmail.com",
-    "rrss": {
-      "linkedin": "https://www.linkedin.com/in/joel-gonz%C3%A1lez-rodr%C3%ADguez-087b6652/",
-      "github": "https://github.com/JoelGRod",
-      "twitter": "https://twitter.com/GRJoe8",
-      "instagram": "https://www.instagram.com/joel_g_rod/?hl=es"
-    },
+    "rrss": [
+      {
+        "name": "linkedin",
+        "icon": "logoLinkedin",
+        "url": "https://www.linkedin.com/in/joel-gonz%C3%A1lez-rodr%C3%ADguez-087b6652/"
+      },
+      {
+        "name": "github",
+        "icon": "logoGithub",
+        "url": "https://github.com/JoelGRod"
+      },
+      {
+        "name": "twitter",
+        "icon": "logoTwitter",
+        "url": "https://twitter.com/GRJoe8"
+      },
+      {
+        "name": "instagram",
+        "icon": "logoInstagram",
+        "url": "https://www.instagram.com/joel_g_rod/?hl=es"
+      }
+    ],
     "lang": [
       {
         "lang": "Spanish",
@@ -44,7 +60,7 @@
         "location": "Santa Cruz de Tenerife",
         "from": "2011",
         "to": "2012",
-        "desc": "Systematization of urban information in the Canary Islands."
+        "desc": "Urban information systematization in the Canary Islands project."
       },
       {
         "profile": "Architecture Technician",

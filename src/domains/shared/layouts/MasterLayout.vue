@@ -6,6 +6,15 @@
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
         <ion-title> {{ title }} </ion-title>
+        <ion-buttons slot="end" v-if="rrss">
+          <ion-button
+            v-for="social in rrss"
+            :key="social.name"
+            target="_blank"
+            :href="social.url">
+            <ion-icon slot="icon-only" :icon="social.icon"></ion-icon>
+          </ion-button>
+        </ion-buttons>
       </ion-toolbar>
     </ion-header>
 
@@ -21,7 +30,9 @@ import {
   IonHeader,
   IonToolbar,
   IonButtons,
+  IonButton,
   IonMenuButton,
+  IonIcon,
   IonTitle,
   IonContent,
 } from "@ionic/vue";
@@ -33,7 +44,9 @@ export default {
     IonHeader,
     IonToolbar,
     IonButtons,
+    IonButton,
     IonMenuButton,
+    IonIcon,
     IonTitle,
     IonContent,
   },
@@ -51,6 +64,9 @@ export default {
       type: Boolean,
       required: true,
       default: false,
+    },
+    rrss: {
+      type: Array,
     },
   },
 };

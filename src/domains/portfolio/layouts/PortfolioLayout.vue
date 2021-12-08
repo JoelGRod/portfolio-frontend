@@ -7,6 +7,7 @@
       title="JGR Portfolio"
       layoutId="home-content"
       :isMenuActive="false"
+      :rrss="social"
     >
       <TabsComponent :tabItems="tabItems"></TabsComponent>
     </master-layout>
@@ -20,6 +21,7 @@ import { IonPage } from "@ionic/vue";
 // Composables
 import useTabs from "../composables/useTabs";
 import useMenu from "../composables/useMenu";
+import useData from "../composables/useData";
 
 export default defineComponent({
   name: "PortfolioLayout",
@@ -36,10 +38,12 @@ export default defineComponent({
   setup() {
     const { tabItems } = useTabs();
     const { menuItems } = useMenu();
+    const { getSocial: social } = useData();
     
     return {
       tabItems,
-      menuItems
+      menuItems,
+      social
     };
   },
 });

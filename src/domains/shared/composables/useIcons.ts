@@ -17,6 +17,10 @@ import {
   cubeOutline,
   logoDocker,
   pencilOutline,
+  logoLinkedin,
+  logoGithub,
+  logoTwitter,
+  logoInstagram,
 } from "ionicons/icons";
 
 const useIcons = () => {
@@ -39,6 +43,10 @@ const useIcons = () => {
     cubeOutline,
     logoDocker,
     pencilOutline,
+    logoLinkedin,
+    logoGithub,
+    logoTwitter,
+    logoInstagram,
   };
 };
 

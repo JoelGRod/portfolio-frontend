@@ -7,3 +7,9 @@ export interface WorkCardInfo {
     codeLink?: string;
     viewLink?: string;
 }
+
+export interface SocialMediaInfo {
+    name: string,
+    icon: string,
+    url: string
+}
