@@ -1,12 +1,31 @@
 <template>
   <ion-page>
-    <ion-header translucent>
-      <ion-toolbar>
-        <ion-title>Works</ion-title>
-      </ion-toolbar>
-    </ion-header>
     <ion-content :fullscreen="true">
-      <ion-title size="large">Home</ion-title>
+      <ion-grid style="background-color: red; min-height: 100%">
+        <ion-row style="background-color: purple; margin: 15% 15% 15% 15%;">
+          <ion-col>
+            <div class="profile-img">
+              <img
+                src="assets/test-photo.jpg"
+                alt="person-image"
+                style="border-radius: 100%"
+              />
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row style="background-color: #3f3f3f;">
+          <ion-col>
+            <h4>Joel Glez</h4>
+          </ion-col>
+        </ion-row>
+        <ion-row style="background-color: green;">
+          <ion-col>
+            <div>
+              <h2 class="animate-title">Full-Stack Developer</h2>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-content>
   </ion-page>
 </template>
@@ -14,24 +33,23 @@
 <script lang="ts">
 import {
   IonPage,
-  // Header
-  IonHeader,
-  IonToolbar,
-  IonTitle,
   // Content
   IonContent,
+  IonGrid,
+  IonRow,
+  IonCol,
 } from "@ionic/vue";
 
 export default {
   name: "Portfolio-Home",
   components: {
     IonPage,
-    // Header
-    IonHeader,
-    IonToolbar,
-    IonTitle,
     // Content
     IonContent,
+    IonGrid,
+    IonRow,
+    IonCol,
   },
 };
 </script>
+<style scoped></style>

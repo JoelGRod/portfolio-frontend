@@ -1,10 +1,13 @@
 {
   "jgr": {
-    "name": "Joel González Rodríguez",
-    "profile": "Full-Stack Developer",
-    "desc": "Javascript Web Developer and IT Systems Technician.\n Computer enthusiast with the desire to continue training and learning.\n I really like working in a team and face new challenges.\n My profile is eminently technical, give me a problem and I will do everything in my hands to find a solution.",
-    "location": "Santa Cruz de Tenerife, Spain",
-    "email": "joelgrdev@gmail.com",
+    "profile": {
+      "name": "Joel González Rodríguez",
+      "specialization": "Full-Stack Developer",
+      "desc": "Javascript Web Developer and IT Systems Technician.\n Computer enthusiast with the desire to continue training and learning.\n I really like working in a team and face new challenges.\n My profile is eminently technical, give me a problem and I will do everything in my hands to find a solution.",
+      "location": "Santa Cruz de Tenerife, Spain",
+      "email": "joelgrdev@gmail.com",
+      "img": "assets/test-photo.jpg"
+    },
     "rrss": [
       {
         "name": "linkedin",

@@ -7,8 +7,7 @@
       title="JGR Portfolio"
       layoutId="home-content"
       :isMenuActive="false"
-      :rrss="social"
-    >
+      :rrss="social">
       <TabsComponent :tabItems="tabItems"></TabsComponent>
     </master-layout>
   </ion-page>
