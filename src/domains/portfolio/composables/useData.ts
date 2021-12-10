@@ -4,7 +4,8 @@ import useIcons from "../../shared/composables/useIcons";
 // Interfaces
 import { 
   WorkCardInfo, 
-  SocialMediaInfo 
+  SocialMediaInfo,
+  ProfileInfo
 } from "../interfaces/cards-interfaces";
 // Data repo
 import { jgr } from "../repository/profiles.json";
@@ -41,7 +42,7 @@ const useData = () => {
     return socials;
   });
 
-  const getProfile = computed(() => {
+  const getProfile = computed((): ProfileInfo => {
     return jgr.profile;
   })
 
