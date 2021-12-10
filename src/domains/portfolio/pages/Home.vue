@@ -4,7 +4,7 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <div class="ion-text-center img-container">
+            <div class="img-container">
               <img
                 src="assets/profile.png"
                 alt="person-image"
@@ -13,19 +13,27 @@
             </div>
             <div class="ion-text-center">
               <ion-text color="primary">
-                <h1>Joel González</h1>
+                <h1>{{ profile.name }}</h1>
               </ion-text>
               <ion-text color="secondary">
-                <h3>Full-Stack Developer</h3>
+                <h3>{{ profile.specialization }}</h3>
               </ion-text>
-              <p class="desc-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
-                Laboriosam rerum voluptatem dolorum iusto,<br />
-                fugiat repellat ea impedit?<br />
-                Vitae, praesentium optio.<br />
-                Molestiae rerum delectus alias commodi <br />
-                deleniti explicabo unde quibusdam consequatur?<br />
-              </p>
+              <ion-text color="dark">
+                <p class="desc-text">
+                  {{ profile.desc }}
+                </p>
+              </ion-text>
+              <ion-item>
+                <ion-icon
+                  icon="mailOutline"
+                  color="secondary"
+                  size="large"
+                  slot="start"
+                ></ion-icon>
+                <a :href="'mailto:' + profile.email">
+                  {{ profile.email }}
+                </a>
+              </ion-item>
             </div>
           </ion-col>
         </ion-row>
@@ -44,7 +52,11 @@ import {
   IonRow,
   IonCol,
   IonText,
+  IonItem,
+  IonIcon,
 } from "@ionic/vue";
+import useData from "../composables/useData";
+import useIcons from "@/domains/shared/composables/useIcons";
 
 export default {
   name: "Portfolio-Home",
@@ -57,19 +69,31 @@ export default {
     IonRow,
     IonCol,
     IonText,
+    IonItem,
+    IonIcon,
+  },
+  setup() {
+    const { getProfile: profile } = useData();
+    const { mailOutline } = useIcons();
+    return {
+      profile,
+      mailOutline,
+    };
   },
 };
 </script>
 <style scoped>
 .img-container {
-  margin-top: calc(100% / 12);
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
 }
 .profile-img {
   border-radius: 100%;
-  width: calc(100% / 3);
+  width: 35%;
 }
 .desc-text {
-  color: #f3f3f3;
+  padding: 2% 8%;
   line-height: 1.5rem;
 }
 

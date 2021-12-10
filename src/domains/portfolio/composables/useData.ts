@@ -41,9 +41,14 @@ const useData = () => {
     return socials;
   });
 
+  const getProfile = computed(() => {
+    return jgr.profile;
+  })
+
   return {
     getWorks,
-    getSocial
+    getSocial,
+    getProfile
   };
 };
 
