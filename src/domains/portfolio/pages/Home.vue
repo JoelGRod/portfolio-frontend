@@ -1,27 +1,31 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      <ion-grid style="background-color: red; min-height: 100%">
-        <ion-row style="background-color: purple; margin: 15% 15% 15% 15%;">
+      <ion-grid>
+        <ion-row>
           <ion-col>
-            <div class="profile-img">
+            <div class="ion-text-center img-container">
               <img
-                src="assets/test-photo.jpg"
+                src="assets/profile.png"
                 alt="person-image"
-                style="border-radius: 100%"
+                class="profile-img"
               />
             </div>
-          </ion-col>
-        </ion-row>
-        <ion-row style="background-color: #3f3f3f;">
-          <ion-col>
-            <h4>Joel Glez</h4>
-          </ion-col>
-        </ion-row>
-        <ion-row style="background-color: green;">
-          <ion-col>
-            <div>
-              <h2 class="animate-title">Full-Stack Developer</h2>
+            <div class="ion-text-center">
+              <ion-text color="primary">
+                <h1>Joel González</h1>
+              </ion-text>
+              <ion-text color="secondary">
+                <h3>Full-Stack Developer</h3>
+              </ion-text>
+              <p class="desc-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
+                Laboriosam rerum voluptatem dolorum iusto,<br />
+                fugiat repellat ea impedit?<br />
+                Vitae, praesentium optio.<br />
+                Molestiae rerum delectus alias commodi <br />
+                deleniti explicabo unde quibusdam consequatur?<br />
+              </p>
             </div>
           </ion-col>
         </ion-row>
@@ -35,9 +39,11 @@ import {
   IonPage,
   // Content
   IonContent,
+  // Profile
   IonGrid,
   IonRow,
   IonCol,
+  IonText,
 } from "@ionic/vue";
 
 export default {
@@ -46,10 +52,34 @@ export default {
     IonPage,
     // Content
     IonContent,
+    // Profile
     IonGrid,
     IonRow,
     IonCol,
+    IonText,
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+.img-container {
+  margin-top: calc(100% / 12);
+}
+.profile-img {
+  border-radius: 100%;
+  width: calc(100% / 3);
+}
+.desc-text {
+  color: #f3f3f3;
+  line-height: 1.5rem;
+}
+
+/* @media screen and (min-width: 500px) {
+  .img-container {
+    margin-top: calc(100% / 20);
+  }
+  .profile-img {
+    border-radius: 100%;
+    width: calc(100% / 4);
+  }
+} */
+</style>
