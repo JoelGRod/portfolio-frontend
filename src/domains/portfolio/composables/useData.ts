@@ -5,7 +5,11 @@ import useIcons from "../../shared/composables/useIcons";
 import { 
   WorkCardInfo, 
   SocialMediaInfo,
-  ProfileInfo
+  ProfileInfo,
+  ExperienceInfo,
+  EducationInfo,
+  LangInfo,
+  KnowledgeInfo
 } from "../interfaces/cards-interfaces";
 // Data repo
 import { jgr } from "../repository/profiles.json";
@@ -19,6 +23,17 @@ const useData = () => {
     logoGithub,
     logoTwitter,
     logoInstagram,
+    logoHtml5,
+    logoCss3,
+    logoSass,
+    logoJavascript,
+    logoPython,
+    logoIonic,
+    logoNodejs,
+    cubeOutline,
+    logoDocker,
+    pencilOutline,
+    star
   } = useIcons();
 
   const getWorks = computed((): WorkCardInfo[] => {
@@ -44,12 +59,52 @@ const useData = () => {
 
   const getProfile = computed((): ProfileInfo => {
     return jgr.profile;
-  })
+  });
+
+  const getExperience = computed((): ExperienceInfo[] => {
+    return jgr.experience;
+  });
+
+  const getEducation = computed((): EducationInfo[] => {
+    return jgr.education;
+  });
+
+  const getLang = computed((): LangInfo[] => {
+    const langs = jgr.lang.map((lang) => {
+      if(lang.icon === "star") lang.icon = star;
+      return lang;
+    });
+    return langs;
+  });
+
+  const getKnowledge = computed((): KnowledgeInfo[] => {
+    const knows = jgr.knowledge.map(know => {
+      if(know.icon === "logoHtml5") know.icon = logoHtml5;
+      if(know.icon === "logoCss3") know.icon = logoCss3;
+      if(know.icon === "logoSass") know.icon = logoSass;
+      if(know.icon === "logoJavascript") know.icon = logoJavascript;
+      if(know.icon === "logoPython") know.icon = logoPython;
+      if(know.icon === "logoVue") know.icon = logoVue;
+      if(know.icon === "logoAngular") know.icon = logoAngular;
+      if(know.icon === "logoIonic") know.icon = logoIonic;
+      if(know.icon === "logoNodejs") know.icon = logoNodejs;
+      if(know.icon === "cubeOutline") know.icon = cubeOutline;
+      if(know.icon === "logoWordpress") know.icon = logoWordpress;
+      if(know.icon === "logoDocker") know.icon = logoDocker;
+      if(know.icon === "pencilOutline") know.icon = pencilOutline;
+      return know;
+    });
+    return knows;
+  });
 
   return {
     getWorks,
     getSocial,
-    getProfile
+    getProfile,
+    getExperience,
+    getEducation,
+    getLang,
+    getKnowledge
   };
 };
 

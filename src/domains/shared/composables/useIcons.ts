@@ -3,6 +3,7 @@ import {
   codeWorkingOutline,
   personOutline,
   mailOutline,
+  star,
   // Logos
   logoAngular,
   logoVue,
@@ -29,6 +30,7 @@ const useIcons = () => {
     codeWorkingOutline,
     personOutline,
     mailOutline,
+    star,
     // Logos
     logoAngular,
     logoVue,

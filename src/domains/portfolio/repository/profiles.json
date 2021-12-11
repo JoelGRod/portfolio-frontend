@@ -33,11 +33,15 @@
     "lang": [
       {
         "lang": "Spanish",
-        "level": "native"
+        "level": "Native",
+        "stars": 5,
+        "icon": "star"
       },
       {
         "lang": "English",
-        "level": "B1"
+        "level": "B1",
+        "stars": 3,
+        "icon": "star"
       }
     ],
     "experience": [
@@ -70,7 +74,7 @@
         "company": "Obras Canarias SL",
         "location": "Santa Cruz de Tenerife",
         "from": "2008",
-        "to": "2010",
+        "to": "2011",
         "desc": "Project manager in architectural works for the public administration."
       }
     ],

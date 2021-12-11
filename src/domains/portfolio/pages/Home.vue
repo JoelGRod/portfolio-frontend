@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import { defineAsyncComponent } from "vue";
+import { defineComponent, defineAsyncComponent } from "vue";
 import {
   IonPage,
   // Content
@@ -15,7 +15,7 @@ import {
 } from "@ionic/vue";
 import useData from "../composables/useData";
 
-export default {
+export default defineComponent({
   name: "Portfolio-Home",
   components: {
     IonPage,
@@ -32,5 +32,5 @@ export default {
       profile,
     };
   },
-};
+});
 </script>
