@@ -5,9 +5,7 @@
       <ion-list-header>
         <ion-label>
           <ion-text color="dark">
-            <h2 class="ion-text-uppercase">
-              <strong>Experience</strong>
-            </h2>
+            <h2 class="ion-text-uppercase"><strong>Experience</strong></h2>
           </ion-text>
         </ion-label>
       </ion-list-header>
@@ -15,9 +13,7 @@
         <ion-item-divider>
           <ion-label slot="start" class="ion-text-start">
             <ion-text color="secondary">
-              <h3>
-                <strong>{{ exp.profile }}</strong>
-              </h3>
+              <h3><strong>{{ exp.profile }}</strong></h3>
             </ion-text>
             <ion-text color="primary">
               <h4 class="pt-02">{{ exp.company }}</h4>
@@ -28,8 +24,7 @@
           </ion-label>
           <ion-label
             slot="end"
-            class="ion-padding-end ion-text-end ion-hide-sm-down"
-          >
+            class="ion-padding-end ion-text-end ion-hide-sm-down">
             <ion-text color="medium">
               <p>{{ exp.location }}</p>
             </ion-text>

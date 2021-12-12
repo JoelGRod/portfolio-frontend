@@ -5,9 +5,7 @@
       <ion-list-header>
         <ion-label>
           <ion-text color="dark">
-            <h2 class="ion-text-uppercase">
-              <strong> Lang </strong>
-            </h2>
+            <h2 class="ion-text-uppercase"><strong> Lang </strong></h2>
           </ion-text>
         </ion-label>
       </ion-list-header>
@@ -15,9 +13,7 @@
         <ion-item lines="none">
           <ion-label slot="start" class="ion-text-start">
             <ion-text color="secondary">
-              <h3>
-                <strong>{{ lang.lang }}</strong>
-              </h3>
+              <h3><strong>{{ lang.lang }}</strong></h3>
             </ion-text>
             <ion-text color="primary" class="ion-float-start">
               <h4>{{ lang.level }}</h4>
@@ -29,8 +25,7 @@
               :key="index"
               slot="end"
               color="warning"
-              :icon="lang.icon"
-            ></ion-icon>
+              :icon="lang.icon"></ion-icon>
           </ion-label>
         </ion-item>
       </ion-item-group>

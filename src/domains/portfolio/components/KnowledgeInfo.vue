@@ -5,9 +5,7 @@
       <ion-list-header>
         <ion-label>
           <ion-text color="dark">
-            <h2 class="ion-text-uppercase">
-              <strong> Knowledge </strong>
-            </h2>
+            <h2 class="ion-text-uppercase"><strong> Knowledge </strong></h2>
           </ion-text>
         </ion-label>
       </ion-list-header>

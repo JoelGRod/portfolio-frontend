@@ -5,9 +5,7 @@
       <ion-list-header>
         <ion-label>
           <ion-text color="dark">
-            <h2 class="ion-text-uppercase">
-              <strong> Education </strong>
-            </h2>
+            <h2 class="ion-text-uppercase"><strong> Education </strong></h2>
           </ion-text>
         </ion-label>
       </ion-list-header>
@@ -15,9 +13,7 @@
         <ion-item-divider>
           <ion-label slot="start" class="ion-text-start">
             <ion-text color="secondary">
-              <h3>
-                <strong>{{ edu.title }}</strong>
-              </h3>
+              <h3><strong>{{ edu.title }}</strong></h3>
             </ion-text>
             <ion-text color="primary">
               <h4 class="pt-02">{{ edu.academy }}</h4>
@@ -28,8 +24,7 @@
           </ion-label>
           <ion-label
             slot="end"
-            class="ion-padding-end ion-text-end ion-hide-sm-down"
-          >
+            class="ion-padding-end ion-text-end ion-hide-sm-down">
             <ion-text color="medium">
               <p>{{ edu.location }}</p>
             </ion-text>
@@ -42,8 +37,7 @@
           <ion-label>
             <ion-text color="dark">
               <p class="text-content">{{ edu.desc }}</p>
-            </ion-text></ion-label
-          >
+            </ion-text></ion-label>
         </ion-item>
       </ion-item-group>
     </ion-list>

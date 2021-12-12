@@ -26,7 +26,6 @@ import {
   IonRow,
 } from "@ionic/vue";
 import useData from "../composables/useData";
-import KnowledgeInfo from "../components/KnowledgeInfo.vue";
 
 export default defineComponent({
   name: "Portfolio-About",
