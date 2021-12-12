@@ -5,8 +5,8 @@
         <ion-row class="ion-justify-content-center">
           <ion-col size="11" class="ion-text-center">
             <h2 class="title">Projects</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt adipisci in sint.</p>
-            <p>Dolorum voluptates, quod laboriosam ab quia a itaque asperiores quis sed pariatur, accusamus facere suscipit praesentium nam neque.</p>
+            <p class="ion-padding-top">Some of the projects I have worked on, both professionally and personally.</p>
+            <p class="ion-padding-bottom">Hoping that I can increase this list with more interesting projects in the future.</p>
           </ion-col>
         </ion-row>
         <ion-row class="ion-justify-content-center">

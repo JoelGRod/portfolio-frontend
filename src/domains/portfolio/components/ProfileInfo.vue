@@ -21,36 +21,35 @@
             </p>
           </ion-text>
 
-          <ion-item
-            color="none"
-            class="ion-text-center profile-icons"
-            lines="none"
-          >
-            <ion-label class="ion-text-center">
-              <ion-icon
-                :icon="homeOutline"
-                color="secondary"
-                size="large"
-              ></ion-icon>
-              <ion-text color="primary">
-                <p>{{ profile.location }}</p>
-              </ion-text>
-            </ion-label>
-            <ion-label class="ion-text-center">
-              <ion-icon
-                :icon="mailOutline"
-                color="secondary"
-                size="large"
-              ></ion-icon>
-              <ion-text color="primary">
-                <p>
-                  <a :href="'mailto:' + profile.email">
-                    {{ profile.email }}
-                  </a>
-                </p>
-              </ion-text>
-            </ion-label>
-          </ion-item>
+          <ion-grid class="profile-icons">
+            <ion-row class="ion-justify-content-center">
+              <ion-col size="6" sizeSm="4" sizeMd="3" sizeLg="2">
+                <ion-label>
+                  <ion-icon
+                    :icon="homeOutline"
+                    color="secondary"
+                    size="large"></ion-icon>
+                  <ion-text color="primary">
+                    <p>{{ profile.location }}</p>
+                  </ion-text>
+                </ion-label>
+              </ion-col>
+              <ion-col size="6" sizeSm="4" sizeMd="3" sizeLg="2">
+                <ion-label>
+                  <ion-icon
+                    :icon="mailOutline"
+                    color="secondary"
+                    size="large"></ion-icon>
+                  <ion-text color="primary">
+                    <p>
+                      <a :href="'mailto:' + profile.email">{{ profile.email }}</a>
+                    </p>
+                  </ion-text>
+                </ion-label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          
         </div>
       </ion-col>
     </ion-row>
@@ -64,7 +63,6 @@ import {
   IonRow,
   IonCol,
   IonText,
-  IonItem,
   IonIcon,
   IonLabel,
 } from "@ionic/vue";
@@ -79,7 +77,6 @@ export default {
     IonRow,
     IonCol,
     IonText,
-    IonItem,
     IonIcon,
     IonLabel,
   },

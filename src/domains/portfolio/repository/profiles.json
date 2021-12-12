@@ -6,7 +6,7 @@
       "desc": "Web Developer, Systems Technician.\n I’m a Computer enthusiast with the desire to continue training and learning, working in a team and face new challenges.\nMy profile is eminently technical, give me a problem and I will do everything in my hands to find a solution.",
       "location": "Tenerife, Spain",
       "email": "joelgrdev@gmail.com",
-      "img": "assets/profile.png"
+      "img": "https://res.cloudinary.com/do7c3iy3j/image/upload/e_art:incognito/v1639322294/portfolio/profile_3_wuhffa.jpg"
     },
     "rrss": [
       {
@@ -46,12 +46,12 @@
     ],
     "experience": [
       {
-        "profile": "IT Systems Technician",
+        "profile": "IT Systems Administrator",
         "company": "EGATESA",
         "location": "La Esperanza, Tenerife",
         "from": "2015",
         "to": "2019",
-        "desc": "Computer maintenance.\n Preparation, configuration and assembly of individual equipment.\n Bizerba programming.\n Servers and computers backups.\n Development of lightweight Apps with Access, VBA and Angular.\n CSB-System.\n User Support.\n RGPD."
+        "desc": "Server Administration (Win Server 2012), Active Directory, Python Scripting, Backups.\n Bizerba programming.\n Development of lightweight Apps with Access, VBA and Angular.\nMaintenance (preparation, configuration and assembly of individual equipment).\n CSB-System.\nIT User Support.\n RGPD."
       },
       {
         "profile": "IT Systems Technician",
@@ -59,7 +59,7 @@
         "location": "La Esperanza, Tenerife",
         "from": "2012",
         "to": "2013",
-        "desc": "Administrative tasks in the maintenance area.\n IT User Support."
+        "desc": "Administrative tasks in the maintenance area.\nMaintenance (preparation, configuration and assembly of individual equipment).\nIT User Support.\nRGPD."
       },
       {
         "profile": "Architecture Technician",
@@ -125,7 +125,7 @@
             "title": "El Sitio del Sauzal",
             "subtitle": "Wordpress",
             "desc": "A page made for the socio-cultural space El Sitio del Sauzal.\n\nFor its realization, the CMS Wordpress has been used together with the avada template.\n\n Some elements were developed to satisfy the client needs (styles and custom main menu, all solved with CSS).",
-            "img": "assets/test-photo.jpg",
+            "img": "https://res.cloudinary.com/do7c3iy3j/image/upload/c_scale,h_500/v1639319450/portfolio/elsitio_y0hoow.png",
             "icon": "logoWordpress",
             "codeLink": "",
             "viewLink": "https://elsitiodelsauzal.com/"
@@ -133,8 +133,8 @@
         {
             "title": "Personal Portfolio",
             "subtitle": "Vue3, Ionic",
-            "desc": "My peronal Portfolio, yes, the one you are visiting right now.\n\nMade only with Vue.js and Ionic framework using a JSON file as a repository in absence of connecting it to the backend.",
-            "img": "assets/test-photo.jpg",
+            "desc": "My peronal Portfolio, yes, the one you are visiting right now.\n\nMade only with Vue.js and Ionic framework using a JSON file as a repository.\n\n In the near future I will connect it to a Node.js API REST.",
+            "img": "https://res.cloudinary.com/do7c3iy3j/image/upload/c_scale,h_500/v1639319652/portfolio/portfolio_znpada.jpg",
             "icon": "logoVue",
             "codeLink": "https://github.com/JoelGRod/portfolio-frontend",
             "viewLink": ""
@@ -143,7 +143,7 @@
             "title": "Chat App",
             "subtitle": "Angular, Node, MongoDb",
             "desc": "A basic chat app created with Angular and NodeJs.\n\nYou only need to register to be able to create your own profiles (chat users) to chat.\n\nAs a security measure, each room can only be entered with a single profile.\n\nThe backend is solved with NodeJs and Express, MongoDb is used as database.",
-            "img": "assets/test-photo.jpg",
+            "img": "https://res.cloudinary.com/do7c3iy3j/image/upload/c_scale,h_500/v1639319569/portfolio/chat-app_usi44h.jpg",
             "icon": "logoAngular",
             "codeLink": "https://github.com/JoelGRod/Backend-Server-TS-Sockets",
             "viewLink": "https://jgrdev-portfolio.herokuapp.com/auth/login"
@@ -152,7 +152,7 @@
             "title": "Focan Final Project",
             "subtitle": "Angular, Node, MongoDb",
             "desc": "A basic administrative app created with Angular, NodeJs and MongoDb as a final project for the web development course.\n\nYou can register hospitals and doctors, associate them with each other and make modifications.\n\nIt also allows you to log in a traditional way or through google and its token system with oauth2 using GCP.\n\nIt also allows you access to your own profile to modify it and change the general theme of the app.\n\nThe Project is based on the udemy courses (Angular Advanced) from the great teacher Fernando Herrera.",
-            "img": "assets/test-photo.jpg",
+            "img": "https://res.cloudinary.com/do7c3iy3j/image/upload/c_scale,h_500/v1639319709/portfolio/focan_ngkc4s.png",
             "icon": "logoAngular",
             "codeLink": "https://github.com/JoelGRod/Focan-Final-Project",
             "viewLink": "https://focan-final-project.herokuapp.com/login"
@@ -161,7 +161,7 @@
             "title": "Countries App",
             "subtitle": "Angular",
             "desc": "A basic app created with Angular to show information of the countries that are searched.\n\nYou can search by country, capital or region and have an autocomplete option.\n\nUse the API 'REST Countries', very useful to obtain information of this kind.\n\nThis app is deployed on Netlify.\n\nThe Project is based on the udemy courses (Angular Basic 2021) from the great teacher Fernando Herrera.",
-            "img": "assets/test-photo.jpg",
+            "img": "https://res.cloudinary.com/do7c3iy3j/image/upload/c_scale,h_500/v1639319818/portfolio/countriesApp_c1y2dy.jpg",
             "icon": "logoAngular",
             "codeLink": "https://github.com/JoelGRod/Countries-App",
             "viewLink": "https://countries-app-af2708.netlify.app/"
@@ -170,7 +170,7 @@
             "title": "Gifs App",
             "subtitle": "Angular",
             "desc": "A basic app created with Angular for search gifs of any kind.\n\nIt has a history of searched gifs and a 'gifs to show' limit.\n\nUse the API 'Giphy' as gifs search engine.\n\nThis app is deployed on Netlify.\n\nThe Project is based on the udemy courses (Angular Basic 2021) from the great teacher Fernando Herrera.",
-            "img": "assets/test-photo.jpg",
+            "img": "https://res.cloudinary.com/do7c3iy3j/image/upload/c_scale,h_500/v1639319766/portfolio/gifsApp2_j2lmze.jpg",
             "icon": "logoAngular",
             "codeLink": "https://github.com/JoelGRod/Gifs-App",
             "viewLink": "https://gifs-app-de371a.netlify.app/"

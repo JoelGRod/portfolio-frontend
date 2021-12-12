@@ -30,12 +30,12 @@ const useTabs = () => {
       icon: personOutline,
       tabLabel: "About",
     },
-    {
-      tabName: "contact-tab",
-      link: "Portfolio-Contact",
-      icon: mailOutline,
-      tabLabel: "Contact",
-    },
+    // {
+    //   tabName: "contact-tab",
+    //   link: "Portfolio-Contact",
+    //   icon: mailOutline,
+    //   tabLabel: "Contact",
+    // },
   ];
 
   return {
