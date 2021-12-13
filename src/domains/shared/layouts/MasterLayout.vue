@@ -1,11 +1,11 @@
 <template>
   <ion-page :id="layoutId">
-    <ion-header>
+    <ion-header mode="md">
       <ion-toolbar>
         <ion-buttons slot="start" v-if="isMenuActive">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title> {{ title }} </ion-title>
+        <ion-title slot="start"> {{ title }} </ion-title>
         <ion-buttons slot="end" v-if="rrss">
           <ion-button
             v-for="social in rrss"
@@ -72,4 +72,5 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+</style>
