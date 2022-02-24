@@ -15,7 +15,7 @@
             size="auto"
             v-for="(knows, index) in knowledges"
             :key="index">
-            <ion-item>
+            <ion-item lines="none">
               <ion-icon slot="start" :icon="knows.icon"></ion-icon>
               <ion-label>{{ knows.name }}</ion-label>
             </ion-item>

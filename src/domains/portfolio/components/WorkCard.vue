@@ -2,7 +2,7 @@
   <ion-card>
     <img :src="cardInfo.img" />
     <ion-card-header class="card-header">
-      <ion-item>
+      <ion-item lines="none">
         <ion-card-title slot="start" color="primary">
             {{ cardInfo.title }}
         </ion-card-title>
@@ -14,7 +14,7 @@
           slot="end">
         </ion-icon>
       </ion-item>
-      <ion-card-subtitle 
+      <ion-card-subtitle
         class="card-header-subtitle" 
         color="secondary">
           {{ cardInfo.subtitle }}
@@ -22,10 +22,12 @@
     </ion-card-header>
 
     <ion-card-content class="card-content">
-      {{ cardInfo.desc }}
+      <ion-text color="dark">
+        {{ cardInfo.desc }}
+      </ion-text>
     </ion-card-content>
 
-    <ion-item class="card-buttons">
+    <ion-item class="card-buttons" lines="none">
       <ion-buttons slot="end">
         <ion-button
           v-if="cardInfo.codeLink"
@@ -105,7 +107,7 @@ export default defineComponent({
 }
 .card-content {
   white-space: pre-line;
-  color: #f3f3f3;
+  /* color: #f3f3f3; */
   line-height: 1.5rem;
 }
 </style>

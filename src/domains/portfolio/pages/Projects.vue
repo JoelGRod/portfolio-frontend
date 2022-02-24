@@ -4,9 +4,19 @@
       <ion-grid>
         <ion-row class="ion-justify-content-center">
           <ion-col size="11" class="ion-text-center">
-            <h2 class="title">Projects</h2>
-            <p class="ion-padding-top">Some of the projects I have worked on, both professionally and personally.</p>
-            <p class="ion-padding-bottom">Hoping that I can increase this list with more interesting projects in the future.</p>
+            <h2 class="title">
+              <ion-text color="dark">Projects</ion-text>
+            </h2>
+            <p class="ion-padding-top">
+              <ion-text color="dark">
+                Some of the projects I have worked on, both professionally and personally.
+              </ion-text>
+            </p>
+            <p class="ion-padding-bottom">
+              <ion-text color="dark">
+                Hoping that I can increase this list with more interesting projects in the future.
+              </ion-text>
+            </p>
           </ion-col>
         </ion-row>
         <ion-row class="ion-justify-content-center">
@@ -63,8 +73,9 @@ export default defineComponent({
 <style scoped>
 
 .title {
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #f3f3f3;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--ion-color-medium);
 }
+
 
 </style>

@@ -33,11 +33,14 @@
             </ion-text>
           </ion-label>
         </ion-item-divider>
-        <ion-item>
+        <ion-item lines="none">
           <ion-label>
-            <ion-text color="dark">
-              <p class="text-content">{{ edu.desc }}</p>
-            </ion-text></ion-label>
+            <p class="text-content">
+              <ion-text color="dark">
+                {{ edu.desc }}
+              </ion-text>
+            </p>
+          </ion-label>
         </ion-item>
       </ion-item-group>
     </ion-list>
@@ -78,3 +81,10 @@ export default defineComponent({
   },
 });
 </script>
+
+<style>
+.test {
+  color: black;
+}
+
+</style>

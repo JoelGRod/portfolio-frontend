@@ -33,11 +33,13 @@
             </ion-text>
           </ion-label>
         </ion-item-divider>
-        <ion-item>
+        <ion-item lines="none">
           <ion-label>
-            <ion-text color="dark">
-              <p class="text-content">{{ exp.desc }}</p>
-            </ion-text>
+            <p class="text-content">
+              <ion-text color="dark">
+                {{ exp.desc }}
+              </ion-text>
+            </p>
           </ion-label>
         </ion-item>
       </ion-item-group>
