@@ -41,6 +41,7 @@ const useData = () => {
       if (proj.icon === "logoAngular") proj.icon = logoAngular;
       if (proj.icon === "logoVue") proj.icon = logoVue;
       if (proj.icon === "logoWordpress") proj.icon = logoWordpress;
+      if (proj.icon === "logoPython") proj.icon = logoPython;
       return proj;
     });
     return projects;

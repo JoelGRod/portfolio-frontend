@@ -122,6 +122,15 @@
     ],
     "projects": [
         {
+            "title": "Multi App",
+            "subtitle": "Python3, TKInter",
+            "desc": "Multi task App made with Python3 and TKInter. By the time the options are:\n\n * Bitrate analyzer: Checks whether an audio file (mp3, wav, flac) has the Bitrate quality it claims (fake or not). \n * YouTube Downloader: Downloads audio or video (best quality available) from an specifc YouTube Video URL. \n\n This is an unfinished app, I'll add more features in the future. \n\n Compiled App available at View Button (MacOS only).",
+            "img": "https://res.cloudinary.com/do7c3iy3j/image/upload/c_scale,h_500/v1651748675/portfolio/multi_app_h6zkxm.jpg",
+            "icon": "logoPython",
+            "codeLink": "https://github.com/JoelGRod/Multi-App",
+            "viewLink": "https://drive.google.com/drive/folders/19E4MywgkcNF2jW376PByqinvZ6Yipjwc?usp=sharing"
+        },
+        {
             "title": "El Sitio del Sauzal",
             "subtitle": "Wordpress",
             "desc": "A page made for the socio-cultural space El Sitio del Sauzal.\n\nFor its realization, the CMS Wordpress has been used together with the avada template.\n\n Some elements were developed to satisfy the client needs (styles and custom main menu, all solved with CSS).",

@@ -62,6 +62,7 @@ import {
   IonItem,
   IonButtons,
   IonButton,
+  IonText
 } from "@ionic/vue";
 import { defineComponent } from "vue";
 import { WorkCardInfo } from "../interfaces/cards-interfaces";
@@ -78,6 +79,7 @@ export default defineComponent({
     IonItem,
     IonButtons,
     IonButton,
+    IonText
   },
   props: {
     cardInfo: {

@@ -7,16 +7,16 @@
             <h2 class="title">
               <ion-text color="dark">Projects</ion-text>
             </h2>
-            <p class="ion-padding-top">
+            <!-- <p class="ion-padding-top">
               <ion-text color="dark">
-                Some of the projects I have worked on, both professionally and personally.
+                Some projects I have been working on.
               </ion-text>
             </p>
             <p class="ion-padding-bottom">
               <ion-text color="dark">
                 Hoping that I can increase this list with more interesting projects in the future.
               </ion-text>
-            </p>
+            </p> -->
           </ion-col>
         </ion-row>
         <ion-row class="ion-justify-content-center">
@@ -42,7 +42,8 @@ import {
   IonContent, 
   IonGrid, 
   IonRow, 
-  IonCol 
+  IonCol,
+  IonText
 } from "@ionic/vue";
 import { 
   defineComponent, 
@@ -59,6 +60,7 @@ export default defineComponent({
     IonGrid,
     IonRow,
     IonCol,
+    IonText,
     WorkCard: defineAsyncComponent(() => import("../components/WorkCard.vue")),
   },
 
